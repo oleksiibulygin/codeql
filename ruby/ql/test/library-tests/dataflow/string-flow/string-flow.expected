@@ -1,0 +1,911 @@
+failures
+| string_flow.rb:63:10:63:10 | a | Unexpected result: hasValueFlow=a |
+| string_flow.rb:102:19:102:36 | # $ hasTaintFlow=a | Missing result:hasTaintFlow=a |
+| string_flow.rb:110:10:110:18 | ...[...] | Unexpected result: hasTaintFlow=a |
+| string_flow.rb:110:20:110:37 | # $ hasValueFlow=a | Missing result:hasValueFlow=a |
+| string_flow.rb:118:10:118:13 | ...[...] | Unexpected result: hasTaintFlow=a |
+| string_flow.rb:118:15:118:32 | # $ hasValueFlow=a | Missing result:hasValueFlow=a |
+| string_flow.rb:200:10:200:10 | a | Unexpected result: hasValueFlow=a |
+| string_flow.rb:210:39:210:56 | # $ hasTaintFlow=a | Missing result:hasTaintFlow=a |
+| string_flow.rb:211:39:211:56 | # $ hasTaintFlow=a | Missing result:hasTaintFlow=a |
+edges
+| string_flow.rb:2:9:2:18 | call to source :  | string_flow.rb:3:21:3:21 | a :  |
+| string_flow.rb:2:9:2:18 | call to source :  | string_flow.rb:3:21:3:21 | a :  |
+| string_flow.rb:3:21:3:21 | a :  | string_flow.rb:3:10:3:22 | call to new |
+| string_flow.rb:3:21:3:21 | a :  | string_flow.rb:3:10:3:22 | call to new |
+| string_flow.rb:7:9:7:18 | call to source :  | string_flow.rb:8:29:8:29 | a :  |
+| string_flow.rb:7:9:7:18 | call to source :  | string_flow.rb:8:29:8:29 | a :  |
+| string_flow.rb:8:29:8:29 | a :  | string_flow.rb:8:10:8:30 | call to try_convert |
+| string_flow.rb:8:29:8:29 | a :  | string_flow.rb:8:10:8:30 | call to try_convert |
+| string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:13:10:13:17 | ... % ... |
+| string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:13:17:13:17 | a :  |
+| string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:13:17:13:17 | a :  |
+| string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:14:28:14:28 | a :  |
+| string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:14:28:14:28 | a :  |
+| string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:15:10:15:10 | a :  |
+| string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:15:10:15:10 | a :  |
+| string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:15:10:15:18 | ... % ... |
+| string_flow.rb:13:17:13:17 | a :  | string_flow.rb:13:10:13:17 | ... % ... |
+| string_flow.rb:13:17:13:17 | a :  | string_flow.rb:13:10:13:17 | ... % ... |
+| string_flow.rb:14:28:14:28 | a :  | string_flow.rb:14:10:14:29 | ... % ... |
+| string_flow.rb:14:28:14:28 | a :  | string_flow.rb:14:10:14:29 | ... % ... |
+| string_flow.rb:15:10:15:10 | a :  | string_flow.rb:15:10:15:18 | ... % ... |
+| string_flow.rb:15:10:15:10 | a :  | string_flow.rb:15:10:15:18 | ... % ... |
+| string_flow.rb:19:9:19:18 | call to source :  | string_flow.rb:20:10:20:10 | a :  |
+| string_flow.rb:19:9:19:18 | call to source :  | string_flow.rb:20:10:20:10 | a :  |
+| string_flow.rb:20:10:20:10 | a :  | string_flow.rb:20:10:20:12 | call to b |
+| string_flow.rb:20:10:20:10 | a :  | string_flow.rb:20:10:20:12 | call to b |
+| string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:25:10:25:10 | a :  |
+| string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:25:10:25:10 | a :  |
+| string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:26:10:26:10 | a :  |
+| string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:26:10:26:10 | a :  |
+| string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:27:10:27:10 | a :  |
+| string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:27:10:27:10 | a :  |
+| string_flow.rb:25:10:25:10 | a :  | string_flow.rb:25:10:25:23 | call to byteslice |
+| string_flow.rb:25:10:25:10 | a :  | string_flow.rb:25:10:25:23 | call to byteslice |
+| string_flow.rb:26:10:26:10 | a :  | string_flow.rb:26:10:26:26 | call to byteslice |
+| string_flow.rb:26:10:26:10 | a :  | string_flow.rb:26:10:26:26 | call to byteslice |
+| string_flow.rb:27:10:27:10 | a :  | string_flow.rb:27:10:27:26 | call to byteslice |
+| string_flow.rb:27:10:27:10 | a :  | string_flow.rb:27:10:27:26 | call to byteslice |
+| string_flow.rb:31:9:31:18 | call to source :  | string_flow.rb:32:10:32:10 | a :  |
+| string_flow.rb:31:9:31:18 | call to source :  | string_flow.rb:33:10:33:10 | a :  |
+| string_flow.rb:32:10:32:10 | a :  | string_flow.rb:32:10:32:21 | call to capitalize |
+| string_flow.rb:33:10:33:10 | a :  | string_flow.rb:33:10:33:22 | call to capitalize! |
+| string_flow.rb:37:9:37:18 | call to source :  | string_flow.rb:38:10:38:10 | a :  |
+| string_flow.rb:37:9:37:18 | call to source :  | string_flow.rb:39:27:39:27 | a :  |
+| string_flow.rb:37:9:37:18 | call to source :  | string_flow.rb:40:10:40:10 | a :  |
+| string_flow.rb:37:9:37:18 | call to source :  | string_flow.rb:41:26:41:26 | a :  |
+| string_flow.rb:37:9:37:18 | call to source :  | string_flow.rb:42:10:42:10 | a :  |
+| string_flow.rb:37:9:37:18 | call to source :  | string_flow.rb:43:26:43:26 | a :  |
+| string_flow.rb:38:10:38:10 | a :  | string_flow.rb:38:10:38:21 | call to center |
+| string_flow.rb:39:27:39:27 | a :  | string_flow.rb:39:10:39:28 | call to center |
+| string_flow.rb:40:10:40:10 | a :  | string_flow.rb:40:10:40:20 | call to ljust |
+| string_flow.rb:41:26:41:26 | a :  | string_flow.rb:41:10:41:27 | call to ljust |
+| string_flow.rb:42:10:42:10 | a :  | string_flow.rb:42:10:42:20 | call to rjust |
+| string_flow.rb:43:26:43:26 | a :  | string_flow.rb:43:10:43:27 | call to rjust |
+| string_flow.rb:47:9:47:18 | call to source :  | string_flow.rb:48:10:48:10 | a :  |
+| string_flow.rb:47:9:47:18 | call to source :  | string_flow.rb:49:10:49:10 | a :  |
+| string_flow.rb:48:10:48:10 | a :  | string_flow.rb:48:10:48:16 | call to chomp |
+| string_flow.rb:49:10:49:10 | a :  | string_flow.rb:49:10:49:17 | call to chomp! |
+| string_flow.rb:53:9:53:18 | call to source :  | string_flow.rb:54:10:54:10 | a :  |
+| string_flow.rb:53:9:53:18 | call to source :  | string_flow.rb:55:10:55:10 | a :  |
+| string_flow.rb:54:10:54:10 | a :  | string_flow.rb:54:10:54:15 | call to chop |
+| string_flow.rb:55:10:55:10 | a :  | string_flow.rb:55:10:55:16 | call to chop! |
+| string_flow.rb:61:9:61:18 | call to source :  | string_flow.rb:62:5:62:5 | a :  |
+| string_flow.rb:61:9:61:18 | call to source :  | string_flow.rb:62:5:62:5 | a :  |
+| string_flow.rb:62:5:62:5 | [post] a :  | string_flow.rb:63:10:63:10 | a |
+| string_flow.rb:62:5:62:5 | [post] a :  | string_flow.rb:63:10:63:10 | a |
+| string_flow.rb:62:5:62:5 | a :  | string_flow.rb:62:5:62:5 | [post] a :  |
+| string_flow.rb:62:5:62:5 | a :  | string_flow.rb:62:5:62:5 | [post] a :  |
+| string_flow.rb:67:9:67:18 | call to source :  | string_flow.rb:70:19:70:19 | a :  |
+| string_flow.rb:67:9:67:18 | call to source :  | string_flow.rb:70:19:70:19 | a :  |
+| string_flow.rb:68:9:68:18 | call to source :  | string_flow.rb:70:22:70:22 | b :  |
+| string_flow.rb:68:9:68:18 | call to source :  | string_flow.rb:70:22:70:22 | b :  |
+| string_flow.rb:70:10:70:10 | [post] c :  | string_flow.rb:71:10:71:10 | c |
+| string_flow.rb:70:10:70:10 | [post] c :  | string_flow.rb:71:10:71:10 | c |
+| string_flow.rb:70:19:70:19 | a :  | string_flow.rb:70:10:70:10 | [post] c :  |
+| string_flow.rb:70:19:70:19 | a :  | string_flow.rb:70:10:70:10 | [post] c :  |
+| string_flow.rb:70:19:70:19 | a :  | string_flow.rb:70:10:70:23 | call to concat |
+| string_flow.rb:70:19:70:19 | a :  | string_flow.rb:70:10:70:23 | call to concat |
+| string_flow.rb:70:22:70:22 | b :  | string_flow.rb:70:10:70:10 | [post] c :  |
+| string_flow.rb:70:22:70:22 | b :  | string_flow.rb:70:10:70:10 | [post] c :  |
+| string_flow.rb:70:22:70:22 | b :  | string_flow.rb:70:10:70:23 | call to concat |
+| string_flow.rb:70:22:70:22 | b :  | string_flow.rb:70:10:70:23 | call to concat |
+| string_flow.rb:75:9:75:18 | call to source :  | string_flow.rb:78:20:78:20 | a :  |
+| string_flow.rb:75:9:75:18 | call to source :  | string_flow.rb:78:20:78:20 | a :  |
+| string_flow.rb:76:9:76:18 | call to source :  | string_flow.rb:78:23:78:23 | b :  |
+| string_flow.rb:76:9:76:18 | call to source :  | string_flow.rb:78:23:78:23 | b :  |
+| string_flow.rb:78:10:78:10 | [post] c :  | string_flow.rb:79:10:79:10 | c |
+| string_flow.rb:78:10:78:10 | [post] c :  | string_flow.rb:79:10:79:10 | c |
+| string_flow.rb:78:20:78:20 | a :  | string_flow.rb:78:10:78:10 | [post] c :  |
+| string_flow.rb:78:20:78:20 | a :  | string_flow.rb:78:10:78:10 | [post] c :  |
+| string_flow.rb:78:20:78:20 | a :  | string_flow.rb:78:10:78:24 | call to prepend |
+| string_flow.rb:78:20:78:20 | a :  | string_flow.rb:78:10:78:24 | call to prepend |
+| string_flow.rb:78:23:78:23 | b :  | string_flow.rb:78:10:78:10 | [post] c :  |
+| string_flow.rb:78:23:78:23 | b :  | string_flow.rb:78:10:78:10 | [post] c :  |
+| string_flow.rb:78:23:78:23 | b :  | string_flow.rb:78:10:78:24 | call to prepend |
+| string_flow.rb:78:23:78:23 | b :  | string_flow.rb:78:10:78:24 | call to prepend |
+| string_flow.rb:83:9:83:18 | call to source :  | string_flow.rb:84:10:84:10 | a :  |
+| string_flow.rb:84:10:84:10 | [post] a :  | string_flow.rb:85:10:85:10 | a :  |
+| string_flow.rb:84:10:84:10 | [post] a :  | string_flow.rb:86:10:86:10 | a :  |
+| string_flow.rb:84:10:84:10 | a :  | string_flow.rb:84:10:84:10 | [post] a :  |
+| string_flow.rb:84:10:84:10 | a :  | string_flow.rb:84:10:84:22 | call to delete |
+| string_flow.rb:85:10:85:10 | a :  | string_flow.rb:85:10:85:29 | call to delete_prefix |
+| string_flow.rb:86:10:86:10 | a :  | string_flow.rb:86:10:86:29 | call to delete_suffix |
+| string_flow.rb:90:9:90:18 | call to source :  | string_flow.rb:91:10:91:10 | a :  |
+| string_flow.rb:90:9:90:18 | call to source :  | string_flow.rb:92:10:92:10 | a :  |
+| string_flow.rb:90:9:90:18 | call to source :  | string_flow.rb:93:10:93:10 | a :  |
+| string_flow.rb:90:9:90:18 | call to source :  | string_flow.rb:94:10:94:10 | a :  |
+| string_flow.rb:90:9:90:18 | call to source :  | string_flow.rb:95:10:95:10 | a :  |
+| string_flow.rb:90:9:90:18 | call to source :  | string_flow.rb:96:10:96:10 | a :  |
+| string_flow.rb:91:10:91:10 | a :  | string_flow.rb:91:10:91:19 | call to downcase |
+| string_flow.rb:92:10:92:10 | a :  | string_flow.rb:92:10:92:20 | call to downcase! |
+| string_flow.rb:93:10:93:10 | a :  | string_flow.rb:93:10:93:19 | call to swapcase |
+| string_flow.rb:94:10:94:10 | a :  | string_flow.rb:94:10:94:20 | call to swapcase! |
+| string_flow.rb:95:10:95:10 | a :  | string_flow.rb:95:10:95:17 | call to upcase |
+| string_flow.rb:96:10:96:10 | a :  | string_flow.rb:96:10:96:18 | call to upcase! |
+| string_flow.rb:100:9:100:18 | call to source :  | string_flow.rb:101:14:101:14 | a :  |
+| string_flow.rb:101:14:101:14 | a :  | string_flow.rb:101:14:101:19 | call to dump |
+| string_flow.rb:106:9:106:18 | call to source :  | string_flow.rb:107:9:107:9 | a :  |
+| string_flow.rb:106:9:106:18 | call to source :  | string_flow.rb:107:9:107:9 | a :  |
+| string_flow.rb:106:9:106:18 | call to source :  | string_flow.rb:109:9:109:9 | a :  |
+| string_flow.rb:107:9:107:9 | a :  | string_flow.rb:107:9:107:40 | call to each_line :  |
+| string_flow.rb:107:9:107:9 | a :  | string_flow.rb:107:9:107:40 | call to each_line :  |
+| string_flow.rb:107:9:107:9 | a :  | string_flow.rb:107:24:107:27 | line :  |
+| string_flow.rb:107:9:107:9 | a :  | string_flow.rb:107:24:107:27 | line :  |
+| string_flow.rb:107:9:107:40 | call to each_line :  | string_flow.rb:108:10:108:10 | b |
+| string_flow.rb:107:9:107:40 | call to each_line :  | string_flow.rb:108:10:108:10 | b |
+| string_flow.rb:107:24:107:27 | line :  | string_flow.rb:107:35:107:38 | line |
+| string_flow.rb:107:24:107:27 | line :  | string_flow.rb:107:35:107:38 | line |
+| string_flow.rb:109:9:109:9 | a :  | string_flow.rb:109:9:109:19 | call to each_line :  |
+| string_flow.rb:109:9:109:19 | call to each_line :  | string_flow.rb:110:10:110:10 | c :  |
+| string_flow.rb:110:10:110:10 | c :  | string_flow.rb:110:10:110:15 | call to to_a :  |
+| string_flow.rb:110:10:110:15 | call to to_a :  | string_flow.rb:110:10:110:18 | ...[...] |
+| string_flow.rb:114:9:114:18 | call to source :  | string_flow.rb:115:9:115:9 | a :  |
+| string_flow.rb:114:9:114:18 | call to source :  | string_flow.rb:115:9:115:9 | a :  |
+| string_flow.rb:114:9:114:18 | call to source :  | string_flow.rb:117:9:117:9 | a :  |
+| string_flow.rb:115:9:115:9 | a :  | string_flow.rb:115:9:115:36 | call to lines :  |
+| string_flow.rb:115:9:115:9 | a :  | string_flow.rb:115:9:115:36 | call to lines :  |
+| string_flow.rb:115:9:115:9 | a :  | string_flow.rb:115:20:115:23 | line :  |
+| string_flow.rb:115:9:115:9 | a :  | string_flow.rb:115:20:115:23 | line :  |
+| string_flow.rb:115:9:115:36 | call to lines :  | string_flow.rb:116:10:116:10 | b |
+| string_flow.rb:115:9:115:36 | call to lines :  | string_flow.rb:116:10:116:10 | b |
+| string_flow.rb:115:20:115:23 | line :  | string_flow.rb:115:31:115:34 | line |
+| string_flow.rb:115:20:115:23 | line :  | string_flow.rb:115:31:115:34 | line |
+| string_flow.rb:117:9:117:9 | a :  | string_flow.rb:117:9:117:15 | call to lines :  |
+| string_flow.rb:117:9:117:15 | call to lines :  | string_flow.rb:118:10:118:10 | c :  |
+| string_flow.rb:118:10:118:10 | c :  | string_flow.rb:118:10:118:13 | ...[...] |
+| string_flow.rb:122:9:122:18 | call to source :  | string_flow.rb:123:10:123:10 | a :  |
+| string_flow.rb:122:9:122:18 | call to source :  | string_flow.rb:124:10:124:10 | a :  |
+| string_flow.rb:122:9:122:18 | call to source :  | string_flow.rb:125:10:125:10 | a :  |
+| string_flow.rb:122:9:122:18 | call to source :  | string_flow.rb:126:10:126:10 | a :  |
+| string_flow.rb:123:10:123:10 | a :  | string_flow.rb:123:10:123:26 | call to encode |
+| string_flow.rb:124:10:124:10 | a :  | string_flow.rb:124:10:124:27 | call to encode! |
+| string_flow.rb:125:10:125:10 | a :  | string_flow.rb:125:10:125:28 | call to unicode_normalize |
+| string_flow.rb:126:10:126:10 | a :  | string_flow.rb:126:10:126:29 | call to unicode_normalize! |
+| string_flow.rb:130:9:130:18 | call to source :  | string_flow.rb:131:10:131:10 | a :  |
+| string_flow.rb:131:10:131:10 | a :  | string_flow.rb:131:10:131:34 | call to force_encoding |
+| string_flow.rb:135:9:135:18 | call to source :  | string_flow.rb:136:10:136:10 | a :  |
+| string_flow.rb:135:9:135:18 | call to source :  | string_flow.rb:136:10:136:10 | a :  |
+| string_flow.rb:136:10:136:10 | a :  | string_flow.rb:136:10:136:17 | call to freeze |
+| string_flow.rb:136:10:136:10 | a :  | string_flow.rb:136:10:136:17 | call to freeze |
+| string_flow.rb:140:9:140:18 | call to source :  | string_flow.rb:142:10:142:10 | a :  |
+| string_flow.rb:140:9:140:18 | call to source :  | string_flow.rb:143:10:143:10 | a :  |
+| string_flow.rb:140:9:140:18 | call to source :  | string_flow.rb:144:10:144:10 | a :  |
+| string_flow.rb:140:9:140:18 | call to source :  | string_flow.rb:145:10:145:10 | a :  |
+| string_flow.rb:141:9:141:18 | call to source :  | string_flow.rb:142:22:142:22 | c :  |
+| string_flow.rb:141:9:141:18 | call to source :  | string_flow.rb:143:23:143:23 | c :  |
+| string_flow.rb:142:10:142:10 | a :  | string_flow.rb:142:10:142:23 | call to gsub |
+| string_flow.rb:142:22:142:22 | c :  | string_flow.rb:142:10:142:23 | call to gsub |
+| string_flow.rb:143:10:143:10 | a :  | string_flow.rb:143:10:143:24 | call to gsub! |
+| string_flow.rb:143:23:143:23 | c :  | string_flow.rb:143:10:143:24 | call to gsub! |
+| string_flow.rb:144:10:144:10 | a :  | string_flow.rb:144:10:144:43 | call to gsub |
+| string_flow.rb:144:32:144:41 | call to source :  | string_flow.rb:144:10:144:43 | call to gsub |
+| string_flow.rb:144:32:144:41 | call to source :  | string_flow.rb:144:10:144:43 | call to gsub |
+| string_flow.rb:145:10:145:10 | a :  | string_flow.rb:145:10:145:44 | call to gsub! |
+| string_flow.rb:145:33:145:42 | call to source :  | string_flow.rb:145:10:145:44 | call to gsub! |
+| string_flow.rb:145:33:145:42 | call to source :  | string_flow.rb:145:10:145:44 | call to gsub! |
+| string_flow.rb:149:9:149:18 | call to source :  | string_flow.rb:151:10:151:10 | a :  |
+| string_flow.rb:149:9:149:18 | call to source :  | string_flow.rb:152:10:152:10 | a :  |
+| string_flow.rb:149:9:149:18 | call to source :  | string_flow.rb:153:10:153:10 | a :  |
+| string_flow.rb:149:9:149:18 | call to source :  | string_flow.rb:154:10:154:10 | a :  |
+| string_flow.rb:150:9:150:18 | call to source :  | string_flow.rb:151:21:151:21 | c :  |
+| string_flow.rb:150:9:150:18 | call to source :  | string_flow.rb:152:22:152:22 | c :  |
+| string_flow.rb:151:10:151:10 | a :  | string_flow.rb:151:10:151:22 | call to sub |
+| string_flow.rb:151:21:151:21 | c :  | string_flow.rb:151:10:151:22 | call to sub |
+| string_flow.rb:152:10:152:10 | a :  | string_flow.rb:152:10:152:23 | call to sub! |
+| string_flow.rb:152:22:152:22 | c :  | string_flow.rb:152:10:152:23 | call to sub! |
+| string_flow.rb:153:10:153:10 | a :  | string_flow.rb:153:10:153:42 | call to sub |
+| string_flow.rb:153:31:153:40 | call to source :  | string_flow.rb:153:10:153:42 | call to sub |
+| string_flow.rb:153:31:153:40 | call to source :  | string_flow.rb:153:10:153:42 | call to sub |
+| string_flow.rb:154:10:154:10 | a :  | string_flow.rb:154:10:154:43 | call to sub! |
+| string_flow.rb:154:32:154:41 | call to source :  | string_flow.rb:154:10:154:43 | call to sub! |
+| string_flow.rb:154:32:154:41 | call to source :  | string_flow.rb:154:10:154:43 | call to sub! |
+| string_flow.rb:158:9:158:18 | call to source :  | string_flow.rb:159:10:159:10 | a :  |
+| string_flow.rb:158:9:158:18 | call to source :  | string_flow.rb:159:10:159:10 | a :  |
+| string_flow.rb:159:10:159:10 | [post] a :  | string_flow.rb:160:24:160:24 | a :  |
+| string_flow.rb:159:10:159:10 | [post] a :  | string_flow.rb:160:24:160:24 | a :  |
+| string_flow.rb:159:10:159:10 | a :  | string_flow.rb:159:10:159:10 | [post] a :  |
+| string_flow.rb:159:10:159:10 | a :  | string_flow.rb:159:10:159:10 | [post] a :  |
+| string_flow.rb:159:10:159:10 | a :  | string_flow.rb:159:10:159:25 | call to insert |
+| string_flow.rb:160:24:160:24 | a :  | string_flow.rb:160:10:160:25 | call to insert |
+| string_flow.rb:160:24:160:24 | a :  | string_flow.rb:160:10:160:25 | call to insert |
+| string_flow.rb:164:9:164:18 | call to source :  | string_flow.rb:165:10:165:10 | a :  |
+| string_flow.rb:165:10:165:10 | a :  | string_flow.rb:165:10:165:18 | call to inspect |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:170:10:170:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:170:10:170:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:171:10:171:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:171:10:171:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:172:10:172:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:172:10:172:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:173:10:173:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:173:10:173:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:174:10:174:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:174:10:174:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:175:10:175:10 | a :  |
+| string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:175:10:175:10 | a :  |
+| string_flow.rb:170:10:170:10 | a :  | string_flow.rb:170:10:170:16 | call to strip |
+| string_flow.rb:170:10:170:10 | a :  | string_flow.rb:170:10:170:16 | call to strip |
+| string_flow.rb:171:10:171:10 | a :  | string_flow.rb:171:10:171:17 | call to strip! |
+| string_flow.rb:171:10:171:10 | a :  | string_flow.rb:171:10:171:17 | call to strip! |
+| string_flow.rb:172:10:172:10 | a :  | string_flow.rb:172:10:172:17 | call to lstrip |
+| string_flow.rb:172:10:172:10 | a :  | string_flow.rb:172:10:172:17 | call to lstrip |
+| string_flow.rb:173:10:173:10 | a :  | string_flow.rb:173:10:173:18 | call to lstrip! |
+| string_flow.rb:173:10:173:10 | a :  | string_flow.rb:173:10:173:18 | call to lstrip! |
+| string_flow.rb:174:10:174:10 | a :  | string_flow.rb:174:10:174:17 | call to rstrip |
+| string_flow.rb:174:10:174:10 | a :  | string_flow.rb:174:10:174:17 | call to rstrip |
+| string_flow.rb:175:10:175:10 | a :  | string_flow.rb:175:10:175:18 | call to rstrip! |
+| string_flow.rb:175:10:175:10 | a :  | string_flow.rb:175:10:175:18 | call to rstrip! |
+| string_flow.rb:179:9:179:18 | call to source :  | string_flow.rb:180:10:180:10 | a :  |
+| string_flow.rb:179:9:179:18 | call to source :  | string_flow.rb:181:10:181:10 | a :  |
+| string_flow.rb:179:9:179:18 | call to source :  | string_flow.rb:182:10:182:10 | a :  |
+| string_flow.rb:179:9:179:18 | call to source :  | string_flow.rb:183:10:183:10 | a :  |
+| string_flow.rb:180:10:180:10 | a :  | string_flow.rb:180:10:180:15 | call to next |
+| string_flow.rb:181:10:181:10 | a :  | string_flow.rb:181:10:181:16 | call to next! |
+| string_flow.rb:182:10:182:10 | a :  | string_flow.rb:182:10:182:15 | call to succ |
+| string_flow.rb:183:10:183:10 | a :  | string_flow.rb:183:10:183:16 | call to succ! |
+| string_flow.rb:187:9:187:18 | call to source :  | string_flow.rb:188:9:188:9 | a :  |
+| string_flow.rb:188:9:188:9 | a :  | string_flow.rb:188:9:188:24 | call to partition [array element 0] :  |
+| string_flow.rb:188:9:188:9 | a :  | string_flow.rb:188:9:188:24 | call to partition [array element 1] :  |
+| string_flow.rb:188:9:188:9 | a :  | string_flow.rb:188:9:188:24 | call to partition [array element 2] :  |
+| string_flow.rb:188:9:188:24 | call to partition [array element 0] :  | string_flow.rb:189:10:189:10 | b [array element 0] :  |
+| string_flow.rb:188:9:188:24 | call to partition [array element 1] :  | string_flow.rb:190:10:190:10 | b [array element 1] :  |
+| string_flow.rb:188:9:188:24 | call to partition [array element 2] :  | string_flow.rb:191:10:191:10 | b [array element 2] :  |
+| string_flow.rb:189:10:189:10 | b [array element 0] :  | string_flow.rb:189:10:189:13 | ...[...] |
+| string_flow.rb:190:10:190:10 | b [array element 1] :  | string_flow.rb:190:10:190:13 | ...[...] |
+| string_flow.rb:191:10:191:10 | b [array element 2] :  | string_flow.rb:191:10:191:13 | ...[...] |
+| string_flow.rb:196:9:196:18 | call to source :  | string_flow.rb:199:10:199:10 | a :  |
+| string_flow.rb:196:9:196:18 | call to source :  | string_flow.rb:199:10:199:10 | a :  |
+| string_flow.rb:197:9:197:18 | call to source :  | string_flow.rb:199:20:199:20 | b :  |
+| string_flow.rb:197:9:197:18 | call to source :  | string_flow.rb:199:20:199:20 | b :  |
+| string_flow.rb:199:10:199:10 | [post] a :  | string_flow.rb:200:10:200:10 | a |
+| string_flow.rb:199:10:199:10 | [post] a :  | string_flow.rb:200:10:200:10 | a |
+| string_flow.rb:199:10:199:10 | a :  | string_flow.rb:199:10:199:10 | [post] a :  |
+| string_flow.rb:199:10:199:10 | a :  | string_flow.rb:199:10:199:10 | [post] a :  |
+| string_flow.rb:199:20:199:20 | b :  | string_flow.rb:199:10:199:10 | [post] a :  |
+| string_flow.rb:199:20:199:20 | b :  | string_flow.rb:199:10:199:10 | [post] a :  |
+| string_flow.rb:199:20:199:20 | b :  | string_flow.rb:199:10:199:21 | call to replace |
+| string_flow.rb:199:20:199:20 | b :  | string_flow.rb:199:10:199:21 | call to replace |
+| string_flow.rb:204:9:204:18 | call to source :  | string_flow.rb:205:10:205:10 | a :  |
+| string_flow.rb:205:10:205:10 | a :  | string_flow.rb:205:10:205:18 | call to reverse |
+| string_flow.rb:209:9:209:18 | call to source :  | string_flow.rb:211:9:211:9 | a :  |
+| string_flow.rb:209:9:209:18 | call to source :  | string_flow.rb:211:9:211:9 | a :  |
+| string_flow.rb:209:9:209:18 | call to source :  | string_flow.rb:213:9:213:9 | a :  |
+| string_flow.rb:211:9:211:9 | a :  | string_flow.rb:211:9:211:37 | call to scan :  |
+| string_flow.rb:211:9:211:9 | a :  | string_flow.rb:211:9:211:37 | call to scan :  |
+| string_flow.rb:211:9:211:37 | call to scan :  | string_flow.rb:212:10:212:10 | b |
+| string_flow.rb:211:9:211:37 | call to scan :  | string_flow.rb:212:10:212:10 | b |
+| string_flow.rb:213:9:213:9 | a :  | string_flow.rb:213:9:213:19 | call to scan :  |
+| string_flow.rb:213:9:213:19 | call to scan :  | string_flow.rb:214:10:214:10 | b :  |
+| string_flow.rb:213:9:213:19 | call to scan :  | string_flow.rb:215:10:215:10 | b :  |
+| string_flow.rb:214:10:214:10 | b :  | string_flow.rb:214:10:214:13 | ...[...] |
+| string_flow.rb:215:10:215:10 | b :  | string_flow.rb:215:10:215:13 | ...[...] |
+| string_flow.rb:219:5:219:18 | ... = ... :  | string_flow.rb:223:20:223:28 | <captured> :  |
+| string_flow.rb:219:5:219:18 | ... = ... :  | string_flow.rb:223:20:223:28 | <captured> :  |
+| string_flow.rb:219:5:219:18 | ... = ... :  | string_flow.rb:231:21:231:29 | <captured> :  |
+| string_flow.rb:219:5:219:18 | ... = ... :  | string_flow.rb:231:21:231:29 | <captured> :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:219:5:219:18 | ... = ... :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:219:5:219:18 | ... = ... :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:220:10:220:10 | a :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:221:20:221:20 | a :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:221:20:221:20 | a :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:222:5:222:5 | a :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:222:5:222:5 | a :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:225:10:225:10 | a :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:226:21:226:21 | a :  |
+| string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:226:21:226:21 | a :  |
+| string_flow.rb:220:10:220:10 | a :  | string_flow.rb:220:10:220:21 | call to scrub |
+| string_flow.rb:221:20:221:20 | a :  | string_flow.rb:221:10:221:21 | call to scrub |
+| string_flow.rb:221:20:221:20 | a :  | string_flow.rb:221:10:221:21 | call to scrub |
+| string_flow.rb:222:5:222:5 | a :  | string_flow.rb:222:16:222:16 | x :  |
+| string_flow.rb:222:5:222:5 | a :  | string_flow.rb:222:16:222:16 | x :  |
+| string_flow.rb:222:16:222:16 | x :  | string_flow.rb:222:24:222:24 | x |
+| string_flow.rb:222:16:222:16 | x :  | string_flow.rb:222:24:222:24 | x |
+| string_flow.rb:223:20:223:28 | <captured> :  | string_flow.rb:223:26:223:26 | a :  |
+| string_flow.rb:223:20:223:28 | <captured> :  | string_flow.rb:223:26:223:26 | a :  |
+| string_flow.rb:223:26:223:26 | a :  | string_flow.rb:223:10:223:28 | call to scrub |
+| string_flow.rb:223:26:223:26 | a :  | string_flow.rb:223:10:223:28 | call to scrub |
+| string_flow.rb:225:10:225:10 | a :  | string_flow.rb:225:10:225:22 | call to scrub! |
+| string_flow.rb:226:21:226:21 | a :  | string_flow.rb:226:10:226:22 | call to scrub! |
+| string_flow.rb:226:21:226:21 | a :  | string_flow.rb:226:10:226:22 | call to scrub! |
+| string_flow.rb:228:5:228:18 | ... = ... :  | string_flow.rb:223:20:223:28 | <captured> :  |
+| string_flow.rb:228:5:228:18 | ... = ... :  | string_flow.rb:223:20:223:28 | <captured> :  |
+| string_flow.rb:228:5:228:18 | ... = ... :  | string_flow.rb:231:21:231:29 | <captured> :  |
+| string_flow.rb:228:5:228:18 | ... = ... :  | string_flow.rb:231:21:231:29 | <captured> :  |
+| string_flow.rb:228:9:228:18 | call to source :  | string_flow.rb:228:5:228:18 | ... = ... :  |
+| string_flow.rb:228:9:228:18 | call to source :  | string_flow.rb:228:5:228:18 | ... = ... :  |
+| string_flow.rb:228:9:228:18 | call to source :  | string_flow.rb:229:5:229:5 | a :  |
+| string_flow.rb:228:9:228:18 | call to source :  | string_flow.rb:229:5:229:5 | a :  |
+| string_flow.rb:229:5:229:5 | a :  | string_flow.rb:229:17:229:17 | x :  |
+| string_flow.rb:229:5:229:5 | a :  | string_flow.rb:229:17:229:17 | x :  |
+| string_flow.rb:229:17:229:17 | x :  | string_flow.rb:229:25:229:25 | x |
+| string_flow.rb:229:17:229:17 | x :  | string_flow.rb:229:25:229:25 | x |
+| string_flow.rb:231:21:231:29 | <captured> :  | string_flow.rb:231:27:231:27 | a :  |
+| string_flow.rb:231:21:231:29 | <captured> :  | string_flow.rb:231:27:231:27 | a :  |
+| string_flow.rb:231:27:231:27 | a :  | string_flow.rb:231:10:231:29 | call to scrub! |
+| string_flow.rb:231:27:231:27 | a :  | string_flow.rb:231:10:231:29 | call to scrub! |
+| string_flow.rb:235:9:235:18 | call to source :  | string_flow.rb:236:9:236:9 | a :  |
+| string_flow.rb:236:9:236:9 | a :  | string_flow.rb:236:9:236:20 | call to shellsplit [array element] :  |
+| string_flow.rb:236:9:236:20 | call to shellsplit [array element] :  | string_flow.rb:237:10:237:10 | b [array element] :  |
+| string_flow.rb:237:10:237:10 | b [array element] :  | string_flow.rb:237:10:237:13 | ...[...] |
+| string_flow.rb:241:9:241:18 | call to source :  | string_flow.rb:242:9:242:9 | a :  |
+| string_flow.rb:241:9:241:18 | call to source :  | string_flow.rb:245:9:245:9 | a :  |
+| string_flow.rb:242:9:242:9 | a :  | string_flow.rb:242:9:242:18 | call to slice :  |
+| string_flow.rb:242:9:242:18 | call to slice :  | string_flow.rb:243:10:243:10 | b :  |
+| string_flow.rb:243:10:243:10 | b :  | string_flow.rb:243:10:243:13 | ...[...] |
+| string_flow.rb:245:9:245:9 | [post] a :  | string_flow.rb:248:9:248:9 | a :  |
+| string_flow.rb:245:9:245:9 | [post] a :  | string_flow.rb:251:9:251:9 | a :  |
+| string_flow.rb:245:9:245:9 | [post] a [array element 1] :  | string_flow.rb:251:9:251:9 | a [array element 1] :  |
+| string_flow.rb:245:9:245:9 | [post] a [array element 2] :  | string_flow.rb:251:9:251:9 | a [array element 2] :  |
+| string_flow.rb:245:9:245:9 | [post] a [array element] :  | string_flow.rb:251:9:251:9 | a [array element] :  |
+| string_flow.rb:245:9:245:9 | a :  | string_flow.rb:245:9:245:9 | [post] a :  |
+| string_flow.rb:245:9:245:9 | a :  | string_flow.rb:245:9:245:9 | [post] a [array element 1] :  |
+| string_flow.rb:245:9:245:9 | a :  | string_flow.rb:245:9:245:9 | [post] a [array element 2] :  |
+| string_flow.rb:245:9:245:9 | a :  | string_flow.rb:245:9:245:9 | [post] a [array element] :  |
+| string_flow.rb:245:9:245:9 | a :  | string_flow.rb:245:9:245:19 | call to slice! :  |
+| string_flow.rb:245:9:245:19 | call to slice! :  | string_flow.rb:246:10:246:10 | b :  |
+| string_flow.rb:246:10:246:10 | b :  | string_flow.rb:246:10:246:13 | ...[...] |
+| string_flow.rb:248:9:248:9 | a :  | string_flow.rb:248:9:248:20 | call to split :  |
+| string_flow.rb:248:9:248:20 | call to split :  | string_flow.rb:249:10:249:10 | b :  |
+| string_flow.rb:249:10:249:10 | b :  | string_flow.rb:249:10:249:13 | ...[...] |
+| string_flow.rb:251:9:251:9 | a :  | string_flow.rb:251:9:251:14 | ...[...] :  |
+| string_flow.rb:251:9:251:9 | a :  | string_flow.rb:251:9:251:14 | ...[...] [array element 0] :  |
+| string_flow.rb:251:9:251:9 | a :  | string_flow.rb:251:9:251:14 | ...[...] [array element 1] :  |
+| string_flow.rb:251:9:251:9 | a :  | string_flow.rb:251:9:251:14 | ...[...] [array element] :  |
+| string_flow.rb:251:9:251:9 | a [array element 1] :  | string_flow.rb:251:9:251:14 | ...[...] [array element 0] :  |
+| string_flow.rb:251:9:251:9 | a [array element 2] :  | string_flow.rb:251:9:251:14 | ...[...] [array element 1] :  |
+| string_flow.rb:251:9:251:9 | a [array element] :  | string_flow.rb:251:9:251:14 | ...[...] [array element] :  |
+| string_flow.rb:251:9:251:14 | ...[...] :  | string_flow.rb:252:10:252:10 | b :  |
+| string_flow.rb:251:9:251:14 | ...[...] [array element 0] :  | string_flow.rb:252:10:252:10 | b [array element 0] :  |
+| string_flow.rb:251:9:251:14 | ...[...] [array element 1] :  | string_flow.rb:252:10:252:10 | b [array element 1] :  |
+| string_flow.rb:251:9:251:14 | ...[...] [array element] :  | string_flow.rb:252:10:252:10 | b [array element] :  |
+| string_flow.rb:252:10:252:10 | b :  | string_flow.rb:252:10:252:13 | ...[...] |
+| string_flow.rb:252:10:252:10 | b [array element 0] :  | string_flow.rb:252:10:252:13 | ...[...] |
+| string_flow.rb:252:10:252:10 | b [array element 1] :  | string_flow.rb:252:10:252:13 | ...[...] |
+| string_flow.rb:252:10:252:10 | b [array element] :  | string_flow.rb:252:10:252:13 | ...[...] |
+| string_flow.rb:256:9:256:18 | call to source :  | string_flow.rb:257:10:257:10 | a :  |
+| string_flow.rb:256:9:256:18 | call to source :  | string_flow.rb:258:10:258:10 | a :  |
+| string_flow.rb:256:9:256:18 | call to source :  | string_flow.rb:259:10:259:10 | a :  |
+| string_flow.rb:256:9:256:18 | call to source :  | string_flow.rb:260:10:260:10 | a :  |
+| string_flow.rb:257:10:257:10 | a :  | string_flow.rb:257:10:257:18 | call to squeeze |
+| string_flow.rb:258:10:258:10 | a :  | string_flow.rb:258:10:258:23 | call to squeeze |
+| string_flow.rb:259:10:259:10 | a :  | string_flow.rb:259:10:259:19 | call to squeeze! |
+| string_flow.rb:260:10:260:10 | a :  | string_flow.rb:260:10:260:24 | call to squeeze! |
+| string_flow.rb:264:9:264:18 | call to source :  | string_flow.rb:265:10:265:10 | a :  |
+| string_flow.rb:264:9:264:18 | call to source :  | string_flow.rb:265:10:265:10 | a :  |
+| string_flow.rb:264:9:264:18 | call to source :  | string_flow.rb:266:10:266:10 | a :  |
+| string_flow.rb:264:9:264:18 | call to source :  | string_flow.rb:266:10:266:10 | a :  |
+| string_flow.rb:265:10:265:10 | a :  | string_flow.rb:265:10:265:17 | call to to_str |
+| string_flow.rb:265:10:265:10 | a :  | string_flow.rb:265:10:265:17 | call to to_str |
+| string_flow.rb:266:10:266:10 | a :  | string_flow.rb:266:10:266:15 | call to to_s |
+| string_flow.rb:266:10:266:10 | a :  | string_flow.rb:266:10:266:15 | call to to_s |
+| string_flow.rb:270:9:270:18 | call to source :  | string_flow.rb:271:10:271:10 | a :  |
+| string_flow.rb:270:9:270:18 | call to source :  | string_flow.rb:272:22:272:22 | a :  |
+| string_flow.rb:270:9:270:18 | call to source :  | string_flow.rb:273:10:273:10 | a :  |
+| string_flow.rb:270:9:270:18 | call to source :  | string_flow.rb:274:23:274:23 | a :  |
+| string_flow.rb:270:9:270:18 | call to source :  | string_flow.rb:275:10:275:10 | a :  |
+| string_flow.rb:270:9:270:18 | call to source :  | string_flow.rb:276:24:276:24 | a :  |
+| string_flow.rb:270:9:270:18 | call to source :  | string_flow.rb:277:10:277:10 | a :  |
+| string_flow.rb:270:9:270:18 | call to source :  | string_flow.rb:278:25:278:25 | a :  |
+| string_flow.rb:271:10:271:10 | a :  | string_flow.rb:271:10:271:23 | call to tr |
+| string_flow.rb:272:22:272:22 | a :  | string_flow.rb:272:10:272:23 | call to tr |
+| string_flow.rb:273:10:273:10 | a :  | string_flow.rb:273:10:273:24 | call to tr! |
+| string_flow.rb:274:23:274:23 | a :  | string_flow.rb:274:10:274:24 | call to tr! |
+| string_flow.rb:275:10:275:10 | a :  | string_flow.rb:275:10:275:25 | call to tr_s |
+| string_flow.rb:276:24:276:24 | a :  | string_flow.rb:276:10:276:25 | call to tr_s |
+| string_flow.rb:277:10:277:10 | a :  | string_flow.rb:277:10:277:26 | call to tr_s! |
+| string_flow.rb:278:25:278:25 | a :  | string_flow.rb:278:10:278:26 | call to tr_s! |
+| string_flow.rb:282:9:282:18 | call to source :  | string_flow.rb:283:5:283:5 | a :  |
+| string_flow.rb:282:9:282:18 | call to source :  | string_flow.rb:283:5:283:5 | a :  |
+| string_flow.rb:282:9:282:18 | call to source :  | string_flow.rb:284:14:284:14 | a :  |
+| string_flow.rb:282:9:282:18 | call to source :  | string_flow.rb:284:14:284:14 | a :  |
+| string_flow.rb:282:9:282:18 | call to source :  | string_flow.rb:285:9:285:9 | a :  |
+| string_flow.rb:283:5:283:5 | a :  | string_flow.rb:283:20:283:20 | x :  |
+| string_flow.rb:283:5:283:5 | a :  | string_flow.rb:283:20:283:20 | x :  |
+| string_flow.rb:283:20:283:20 | x :  | string_flow.rb:283:28:283:28 | x |
+| string_flow.rb:283:20:283:20 | x :  | string_flow.rb:283:28:283:28 | x |
+| string_flow.rb:284:14:284:14 | a :  | string_flow.rb:284:20:284:20 | x :  |
+| string_flow.rb:284:14:284:14 | a :  | string_flow.rb:284:20:284:20 | x :  |
+| string_flow.rb:284:20:284:20 | x :  | string_flow.rb:284:28:284:28 | x |
+| string_flow.rb:284:20:284:20 | x :  | string_flow.rb:284:28:284:28 | x |
+| string_flow.rb:285:9:285:9 | a :  | string_flow.rb:285:9:285:19 | call to upto :  |
+| string_flow.rb:285:9:285:19 | call to upto :  | string_flow.rb:286:10:286:10 | c :  |
+| string_flow.rb:286:10:286:10 | c :  | string_flow.rb:286:10:286:13 | ...[...] |
+nodes
+| string_flow.rb:2:9:2:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:2:9:2:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:3:10:3:22 | call to new | semmle.label | call to new |
+| string_flow.rb:3:10:3:22 | call to new | semmle.label | call to new |
+| string_flow.rb:3:21:3:21 | a :  | semmle.label | a :  |
+| string_flow.rb:3:21:3:21 | a :  | semmle.label | a :  |
+| string_flow.rb:7:9:7:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:7:9:7:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:8:10:8:30 | call to try_convert | semmle.label | call to try_convert |
+| string_flow.rb:8:10:8:30 | call to try_convert | semmle.label | call to try_convert |
+| string_flow.rb:8:29:8:29 | a :  | semmle.label | a :  |
+| string_flow.rb:8:29:8:29 | a :  | semmle.label | a :  |
+| string_flow.rb:12:9:12:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:12:9:12:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:13:10:13:17 | ... % ... | semmle.label | ... % ... |
+| string_flow.rb:13:10:13:17 | ... % ... | semmle.label | ... % ... |
+| string_flow.rb:13:17:13:17 | a :  | semmle.label | a :  |
+| string_flow.rb:13:17:13:17 | a :  | semmle.label | a :  |
+| string_flow.rb:14:10:14:29 | ... % ... | semmle.label | ... % ... |
+| string_flow.rb:14:10:14:29 | ... % ... | semmle.label | ... % ... |
+| string_flow.rb:14:28:14:28 | a :  | semmle.label | a :  |
+| string_flow.rb:14:28:14:28 | a :  | semmle.label | a :  |
+| string_flow.rb:15:10:15:10 | a :  | semmle.label | a :  |
+| string_flow.rb:15:10:15:10 | a :  | semmle.label | a :  |
+| string_flow.rb:15:10:15:18 | ... % ... | semmle.label | ... % ... |
+| string_flow.rb:15:10:15:18 | ... % ... | semmle.label | ... % ... |
+| string_flow.rb:19:9:19:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:19:9:19:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:20:10:20:10 | a :  | semmle.label | a :  |
+| string_flow.rb:20:10:20:10 | a :  | semmle.label | a :  |
+| string_flow.rb:20:10:20:12 | call to b | semmle.label | call to b |
+| string_flow.rb:20:10:20:12 | call to b | semmle.label | call to b |
+| string_flow.rb:24:9:24:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:24:9:24:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:25:10:25:10 | a :  | semmle.label | a :  |
+| string_flow.rb:25:10:25:10 | a :  | semmle.label | a :  |
+| string_flow.rb:25:10:25:23 | call to byteslice | semmle.label | call to byteslice |
+| string_flow.rb:25:10:25:23 | call to byteslice | semmle.label | call to byteslice |
+| string_flow.rb:26:10:26:10 | a :  | semmle.label | a :  |
+| string_flow.rb:26:10:26:10 | a :  | semmle.label | a :  |
+| string_flow.rb:26:10:26:26 | call to byteslice | semmle.label | call to byteslice |
+| string_flow.rb:26:10:26:26 | call to byteslice | semmle.label | call to byteslice |
+| string_flow.rb:27:10:27:10 | a :  | semmle.label | a :  |
+| string_flow.rb:27:10:27:10 | a :  | semmle.label | a :  |
+| string_flow.rb:27:10:27:26 | call to byteslice | semmle.label | call to byteslice |
+| string_flow.rb:27:10:27:26 | call to byteslice | semmle.label | call to byteslice |
+| string_flow.rb:31:9:31:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:32:10:32:10 | a :  | semmle.label | a :  |
+| string_flow.rb:32:10:32:21 | call to capitalize | semmle.label | call to capitalize |
+| string_flow.rb:33:10:33:10 | a :  | semmle.label | a :  |
+| string_flow.rb:33:10:33:22 | call to capitalize! | semmle.label | call to capitalize! |
+| string_flow.rb:37:9:37:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:38:10:38:10 | a :  | semmle.label | a :  |
+| string_flow.rb:38:10:38:21 | call to center | semmle.label | call to center |
+| string_flow.rb:39:10:39:28 | call to center | semmle.label | call to center |
+| string_flow.rb:39:27:39:27 | a :  | semmle.label | a :  |
+| string_flow.rb:40:10:40:10 | a :  | semmle.label | a :  |
+| string_flow.rb:40:10:40:20 | call to ljust | semmle.label | call to ljust |
+| string_flow.rb:41:10:41:27 | call to ljust | semmle.label | call to ljust |
+| string_flow.rb:41:26:41:26 | a :  | semmle.label | a :  |
+| string_flow.rb:42:10:42:10 | a :  | semmle.label | a :  |
+| string_flow.rb:42:10:42:20 | call to rjust | semmle.label | call to rjust |
+| string_flow.rb:43:10:43:27 | call to rjust | semmle.label | call to rjust |
+| string_flow.rb:43:26:43:26 | a :  | semmle.label | a :  |
+| string_flow.rb:47:9:47:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:48:10:48:10 | a :  | semmle.label | a :  |
+| string_flow.rb:48:10:48:16 | call to chomp | semmle.label | call to chomp |
+| string_flow.rb:49:10:49:10 | a :  | semmle.label | a :  |
+| string_flow.rb:49:10:49:17 | call to chomp! | semmle.label | call to chomp! |
+| string_flow.rb:53:9:53:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:54:10:54:10 | a :  | semmle.label | a :  |
+| string_flow.rb:54:10:54:15 | call to chop | semmle.label | call to chop |
+| string_flow.rb:55:10:55:10 | a :  | semmle.label | a :  |
+| string_flow.rb:55:10:55:16 | call to chop! | semmle.label | call to chop! |
+| string_flow.rb:61:9:61:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:61:9:61:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:62:5:62:5 | [post] a :  | semmle.label | [post] a :  |
+| string_flow.rb:62:5:62:5 | [post] a :  | semmle.label | [post] a :  |
+| string_flow.rb:62:5:62:5 | a :  | semmle.label | a :  |
+| string_flow.rb:62:5:62:5 | a :  | semmle.label | a :  |
+| string_flow.rb:63:10:63:10 | a | semmle.label | a |
+| string_flow.rb:63:10:63:10 | a | semmle.label | a |
+| string_flow.rb:67:9:67:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:67:9:67:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:68:9:68:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:68:9:68:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:70:10:70:10 | [post] c :  | semmle.label | [post] c :  |
+| string_flow.rb:70:10:70:10 | [post] c :  | semmle.label | [post] c :  |
+| string_flow.rb:70:10:70:23 | call to concat | semmle.label | call to concat |
+| string_flow.rb:70:10:70:23 | call to concat | semmle.label | call to concat |
+| string_flow.rb:70:19:70:19 | a :  | semmle.label | a :  |
+| string_flow.rb:70:19:70:19 | a :  | semmle.label | a :  |
+| string_flow.rb:70:22:70:22 | b :  | semmle.label | b :  |
+| string_flow.rb:70:22:70:22 | b :  | semmle.label | b :  |
+| string_flow.rb:71:10:71:10 | c | semmle.label | c |
+| string_flow.rb:71:10:71:10 | c | semmle.label | c |
+| string_flow.rb:75:9:75:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:75:9:75:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:76:9:76:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:76:9:76:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:78:10:78:10 | [post] c :  | semmle.label | [post] c :  |
+| string_flow.rb:78:10:78:10 | [post] c :  | semmle.label | [post] c :  |
+| string_flow.rb:78:10:78:24 | call to prepend | semmle.label | call to prepend |
+| string_flow.rb:78:10:78:24 | call to prepend | semmle.label | call to prepend |
+| string_flow.rb:78:20:78:20 | a :  | semmle.label | a :  |
+| string_flow.rb:78:20:78:20 | a :  | semmle.label | a :  |
+| string_flow.rb:78:23:78:23 | b :  | semmle.label | b :  |
+| string_flow.rb:78:23:78:23 | b :  | semmle.label | b :  |
+| string_flow.rb:79:10:79:10 | c | semmle.label | c |
+| string_flow.rb:79:10:79:10 | c | semmle.label | c |
+| string_flow.rb:83:9:83:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:84:10:84:10 | [post] a :  | semmle.label | [post] a :  |
+| string_flow.rb:84:10:84:10 | a :  | semmle.label | a :  |
+| string_flow.rb:84:10:84:22 | call to delete | semmle.label | call to delete |
+| string_flow.rb:85:10:85:10 | a :  | semmle.label | a :  |
+| string_flow.rb:85:10:85:29 | call to delete_prefix | semmle.label | call to delete_prefix |
+| string_flow.rb:86:10:86:10 | a :  | semmle.label | a :  |
+| string_flow.rb:86:10:86:29 | call to delete_suffix | semmle.label | call to delete_suffix |
+| string_flow.rb:90:9:90:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:91:10:91:10 | a :  | semmle.label | a :  |
+| string_flow.rb:91:10:91:19 | call to downcase | semmle.label | call to downcase |
+| string_flow.rb:92:10:92:10 | a :  | semmle.label | a :  |
+| string_flow.rb:92:10:92:20 | call to downcase! | semmle.label | call to downcase! |
+| string_flow.rb:93:10:93:10 | a :  | semmle.label | a :  |
+| string_flow.rb:93:10:93:19 | call to swapcase | semmle.label | call to swapcase |
+| string_flow.rb:94:10:94:10 | a :  | semmle.label | a :  |
+| string_flow.rb:94:10:94:20 | call to swapcase! | semmle.label | call to swapcase! |
+| string_flow.rb:95:10:95:10 | a :  | semmle.label | a :  |
+| string_flow.rb:95:10:95:17 | call to upcase | semmle.label | call to upcase |
+| string_flow.rb:96:10:96:10 | a :  | semmle.label | a :  |
+| string_flow.rb:96:10:96:18 | call to upcase! | semmle.label | call to upcase! |
+| string_flow.rb:100:9:100:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:101:14:101:14 | a :  | semmle.label | a :  |
+| string_flow.rb:101:14:101:19 | call to dump | semmle.label | call to dump |
+| string_flow.rb:106:9:106:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:106:9:106:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:107:9:107:9 | a :  | semmle.label | a :  |
+| string_flow.rb:107:9:107:9 | a :  | semmle.label | a :  |
+| string_flow.rb:107:9:107:40 | call to each_line :  | semmle.label | call to each_line :  |
+| string_flow.rb:107:9:107:40 | call to each_line :  | semmle.label | call to each_line :  |
+| string_flow.rb:107:24:107:27 | line :  | semmle.label | line :  |
+| string_flow.rb:107:24:107:27 | line :  | semmle.label | line :  |
+| string_flow.rb:107:35:107:38 | line | semmle.label | line |
+| string_flow.rb:107:35:107:38 | line | semmle.label | line |
+| string_flow.rb:108:10:108:10 | b | semmle.label | b |
+| string_flow.rb:108:10:108:10 | b | semmle.label | b |
+| string_flow.rb:109:9:109:9 | a :  | semmle.label | a :  |
+| string_flow.rb:109:9:109:19 | call to each_line :  | semmle.label | call to each_line :  |
+| string_flow.rb:110:10:110:10 | c :  | semmle.label | c :  |
+| string_flow.rb:110:10:110:15 | call to to_a :  | semmle.label | call to to_a :  |
+| string_flow.rb:110:10:110:18 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:114:9:114:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:114:9:114:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:115:9:115:9 | a :  | semmle.label | a :  |
+| string_flow.rb:115:9:115:9 | a :  | semmle.label | a :  |
+| string_flow.rb:115:9:115:36 | call to lines :  | semmle.label | call to lines :  |
+| string_flow.rb:115:9:115:36 | call to lines :  | semmle.label | call to lines :  |
+| string_flow.rb:115:20:115:23 | line :  | semmle.label | line :  |
+| string_flow.rb:115:20:115:23 | line :  | semmle.label | line :  |
+| string_flow.rb:115:31:115:34 | line | semmle.label | line |
+| string_flow.rb:115:31:115:34 | line | semmle.label | line |
+| string_flow.rb:116:10:116:10 | b | semmle.label | b |
+| string_flow.rb:116:10:116:10 | b | semmle.label | b |
+| string_flow.rb:117:9:117:9 | a :  | semmle.label | a :  |
+| string_flow.rb:117:9:117:15 | call to lines :  | semmle.label | call to lines :  |
+| string_flow.rb:118:10:118:10 | c :  | semmle.label | c :  |
+| string_flow.rb:118:10:118:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:122:9:122:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:123:10:123:10 | a :  | semmle.label | a :  |
+| string_flow.rb:123:10:123:26 | call to encode | semmle.label | call to encode |
+| string_flow.rb:124:10:124:10 | a :  | semmle.label | a :  |
+| string_flow.rb:124:10:124:27 | call to encode! | semmle.label | call to encode! |
+| string_flow.rb:125:10:125:10 | a :  | semmle.label | a :  |
+| string_flow.rb:125:10:125:28 | call to unicode_normalize | semmle.label | call to unicode_normalize |
+| string_flow.rb:126:10:126:10 | a :  | semmle.label | a :  |
+| string_flow.rb:126:10:126:29 | call to unicode_normalize! | semmle.label | call to unicode_normalize! |
+| string_flow.rb:130:9:130:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:131:10:131:10 | a :  | semmle.label | a :  |
+| string_flow.rb:131:10:131:34 | call to force_encoding | semmle.label | call to force_encoding |
+| string_flow.rb:135:9:135:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:135:9:135:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:136:10:136:10 | a :  | semmle.label | a :  |
+| string_flow.rb:136:10:136:10 | a :  | semmle.label | a :  |
+| string_flow.rb:136:10:136:17 | call to freeze | semmle.label | call to freeze |
+| string_flow.rb:136:10:136:17 | call to freeze | semmle.label | call to freeze |
+| string_flow.rb:140:9:140:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:141:9:141:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:142:10:142:10 | a :  | semmle.label | a :  |
+| string_flow.rb:142:10:142:23 | call to gsub | semmle.label | call to gsub |
+| string_flow.rb:142:22:142:22 | c :  | semmle.label | c :  |
+| string_flow.rb:143:10:143:10 | a :  | semmle.label | a :  |
+| string_flow.rb:143:10:143:24 | call to gsub! | semmle.label | call to gsub! |
+| string_flow.rb:143:23:143:23 | c :  | semmle.label | c :  |
+| string_flow.rb:144:10:144:10 | a :  | semmle.label | a :  |
+| string_flow.rb:144:10:144:43 | call to gsub | semmle.label | call to gsub |
+| string_flow.rb:144:10:144:43 | call to gsub | semmle.label | call to gsub |
+| string_flow.rb:144:32:144:41 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:144:32:144:41 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:145:10:145:10 | a :  | semmle.label | a :  |
+| string_flow.rb:145:10:145:44 | call to gsub! | semmle.label | call to gsub! |
+| string_flow.rb:145:10:145:44 | call to gsub! | semmle.label | call to gsub! |
+| string_flow.rb:145:33:145:42 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:145:33:145:42 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:149:9:149:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:150:9:150:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:151:10:151:10 | a :  | semmle.label | a :  |
+| string_flow.rb:151:10:151:22 | call to sub | semmle.label | call to sub |
+| string_flow.rb:151:21:151:21 | c :  | semmle.label | c :  |
+| string_flow.rb:152:10:152:10 | a :  | semmle.label | a :  |
+| string_flow.rb:152:10:152:23 | call to sub! | semmle.label | call to sub! |
+| string_flow.rb:152:22:152:22 | c :  | semmle.label | c :  |
+| string_flow.rb:153:10:153:10 | a :  | semmle.label | a :  |
+| string_flow.rb:153:10:153:42 | call to sub | semmle.label | call to sub |
+| string_flow.rb:153:10:153:42 | call to sub | semmle.label | call to sub |
+| string_flow.rb:153:31:153:40 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:153:31:153:40 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:154:10:154:10 | a :  | semmle.label | a :  |
+| string_flow.rb:154:10:154:43 | call to sub! | semmle.label | call to sub! |
+| string_flow.rb:154:10:154:43 | call to sub! | semmle.label | call to sub! |
+| string_flow.rb:154:32:154:41 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:154:32:154:41 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:158:9:158:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:158:9:158:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:159:10:159:10 | [post] a :  | semmle.label | [post] a :  |
+| string_flow.rb:159:10:159:10 | [post] a :  | semmle.label | [post] a :  |
+| string_flow.rb:159:10:159:10 | a :  | semmle.label | a :  |
+| string_flow.rb:159:10:159:10 | a :  | semmle.label | a :  |
+| string_flow.rb:159:10:159:25 | call to insert | semmle.label | call to insert |
+| string_flow.rb:160:10:160:25 | call to insert | semmle.label | call to insert |
+| string_flow.rb:160:10:160:25 | call to insert | semmle.label | call to insert |
+| string_flow.rb:160:24:160:24 | a :  | semmle.label | a :  |
+| string_flow.rb:160:24:160:24 | a :  | semmle.label | a :  |
+| string_flow.rb:164:9:164:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:165:10:165:10 | a :  | semmle.label | a :  |
+| string_flow.rb:165:10:165:18 | call to inspect | semmle.label | call to inspect |
+| string_flow.rb:169:9:169:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:169:9:169:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:170:10:170:10 | a :  | semmle.label | a :  |
+| string_flow.rb:170:10:170:10 | a :  | semmle.label | a :  |
+| string_flow.rb:170:10:170:16 | call to strip | semmle.label | call to strip |
+| string_flow.rb:170:10:170:16 | call to strip | semmle.label | call to strip |
+| string_flow.rb:171:10:171:10 | a :  | semmle.label | a :  |
+| string_flow.rb:171:10:171:10 | a :  | semmle.label | a :  |
+| string_flow.rb:171:10:171:17 | call to strip! | semmle.label | call to strip! |
+| string_flow.rb:171:10:171:17 | call to strip! | semmle.label | call to strip! |
+| string_flow.rb:172:10:172:10 | a :  | semmle.label | a :  |
+| string_flow.rb:172:10:172:10 | a :  | semmle.label | a :  |
+| string_flow.rb:172:10:172:17 | call to lstrip | semmle.label | call to lstrip |
+| string_flow.rb:172:10:172:17 | call to lstrip | semmle.label | call to lstrip |
+| string_flow.rb:173:10:173:10 | a :  | semmle.label | a :  |
+| string_flow.rb:173:10:173:10 | a :  | semmle.label | a :  |
+| string_flow.rb:173:10:173:18 | call to lstrip! | semmle.label | call to lstrip! |
+| string_flow.rb:173:10:173:18 | call to lstrip! | semmle.label | call to lstrip! |
+| string_flow.rb:174:10:174:10 | a :  | semmle.label | a :  |
+| string_flow.rb:174:10:174:10 | a :  | semmle.label | a :  |
+| string_flow.rb:174:10:174:17 | call to rstrip | semmle.label | call to rstrip |
+| string_flow.rb:174:10:174:17 | call to rstrip | semmle.label | call to rstrip |
+| string_flow.rb:175:10:175:10 | a :  | semmle.label | a :  |
+| string_flow.rb:175:10:175:10 | a :  | semmle.label | a :  |
+| string_flow.rb:175:10:175:18 | call to rstrip! | semmle.label | call to rstrip! |
+| string_flow.rb:175:10:175:18 | call to rstrip! | semmle.label | call to rstrip! |
+| string_flow.rb:179:9:179:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:180:10:180:10 | a :  | semmle.label | a :  |
+| string_flow.rb:180:10:180:15 | call to next | semmle.label | call to next |
+| string_flow.rb:181:10:181:10 | a :  | semmle.label | a :  |
+| string_flow.rb:181:10:181:16 | call to next! | semmle.label | call to next! |
+| string_flow.rb:182:10:182:10 | a :  | semmle.label | a :  |
+| string_flow.rb:182:10:182:15 | call to succ | semmle.label | call to succ |
+| string_flow.rb:183:10:183:10 | a :  | semmle.label | a :  |
+| string_flow.rb:183:10:183:16 | call to succ! | semmle.label | call to succ! |
+| string_flow.rb:187:9:187:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:188:9:188:9 | a :  | semmle.label | a :  |
+| string_flow.rb:188:9:188:24 | call to partition [array element 0] :  | semmle.label | call to partition [array element 0] :  |
+| string_flow.rb:188:9:188:24 | call to partition [array element 1] :  | semmle.label | call to partition [array element 1] :  |
+| string_flow.rb:188:9:188:24 | call to partition [array element 2] :  | semmle.label | call to partition [array element 2] :  |
+| string_flow.rb:189:10:189:10 | b [array element 0] :  | semmle.label | b [array element 0] :  |
+| string_flow.rb:189:10:189:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:190:10:190:10 | b [array element 1] :  | semmle.label | b [array element 1] :  |
+| string_flow.rb:190:10:190:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:191:10:191:10 | b [array element 2] :  | semmle.label | b [array element 2] :  |
+| string_flow.rb:191:10:191:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:196:9:196:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:196:9:196:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:197:9:197:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:197:9:197:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:199:10:199:10 | [post] a :  | semmle.label | [post] a :  |
+| string_flow.rb:199:10:199:10 | [post] a :  | semmle.label | [post] a :  |
+| string_flow.rb:199:10:199:10 | a :  | semmle.label | a :  |
+| string_flow.rb:199:10:199:10 | a :  | semmle.label | a :  |
+| string_flow.rb:199:10:199:21 | call to replace | semmle.label | call to replace |
+| string_flow.rb:199:10:199:21 | call to replace | semmle.label | call to replace |
+| string_flow.rb:199:20:199:20 | b :  | semmle.label | b :  |
+| string_flow.rb:199:20:199:20 | b :  | semmle.label | b :  |
+| string_flow.rb:200:10:200:10 | a | semmle.label | a |
+| string_flow.rb:200:10:200:10 | a | semmle.label | a |
+| string_flow.rb:204:9:204:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:205:10:205:10 | a :  | semmle.label | a :  |
+| string_flow.rb:205:10:205:18 | call to reverse | semmle.label | call to reverse |
+| string_flow.rb:209:9:209:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:209:9:209:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:211:9:211:9 | a :  | semmle.label | a :  |
+| string_flow.rb:211:9:211:9 | a :  | semmle.label | a :  |
+| string_flow.rb:211:9:211:37 | call to scan :  | semmle.label | call to scan :  |
+| string_flow.rb:211:9:211:37 | call to scan :  | semmle.label | call to scan :  |
+| string_flow.rb:212:10:212:10 | b | semmle.label | b |
+| string_flow.rb:212:10:212:10 | b | semmle.label | b |
+| string_flow.rb:213:9:213:9 | a :  | semmle.label | a :  |
+| string_flow.rb:213:9:213:19 | call to scan :  | semmle.label | call to scan :  |
+| string_flow.rb:214:10:214:10 | b :  | semmle.label | b :  |
+| string_flow.rb:214:10:214:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:215:10:215:10 | b :  | semmle.label | b :  |
+| string_flow.rb:215:10:215:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:219:5:219:18 | ... = ... :  | semmle.label | ... = ... :  |
+| string_flow.rb:219:5:219:18 | ... = ... :  | semmle.label | ... = ... :  |
+| string_flow.rb:219:9:219:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:219:9:219:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:220:10:220:10 | a :  | semmle.label | a :  |
+| string_flow.rb:220:10:220:21 | call to scrub | semmle.label | call to scrub |
+| string_flow.rb:221:10:221:21 | call to scrub | semmle.label | call to scrub |
+| string_flow.rb:221:10:221:21 | call to scrub | semmle.label | call to scrub |
+| string_flow.rb:221:20:221:20 | a :  | semmle.label | a :  |
+| string_flow.rb:221:20:221:20 | a :  | semmle.label | a :  |
+| string_flow.rb:222:5:222:5 | a :  | semmle.label | a :  |
+| string_flow.rb:222:5:222:5 | a :  | semmle.label | a :  |
+| string_flow.rb:222:16:222:16 | x :  | semmle.label | x :  |
+| string_flow.rb:222:16:222:16 | x :  | semmle.label | x :  |
+| string_flow.rb:222:24:222:24 | x | semmle.label | x |
+| string_flow.rb:222:24:222:24 | x | semmle.label | x |
+| string_flow.rb:223:10:223:28 | call to scrub | semmle.label | call to scrub |
+| string_flow.rb:223:10:223:28 | call to scrub | semmle.label | call to scrub |
+| string_flow.rb:223:20:223:28 | <captured> :  | semmle.label | <captured> :  |
+| string_flow.rb:223:20:223:28 | <captured> :  | semmle.label | <captured> :  |
+| string_flow.rb:223:26:223:26 | a :  | semmle.label | a :  |
+| string_flow.rb:223:26:223:26 | a :  | semmle.label | a :  |
+| string_flow.rb:225:10:225:10 | a :  | semmle.label | a :  |
+| string_flow.rb:225:10:225:22 | call to scrub! | semmle.label | call to scrub! |
+| string_flow.rb:226:10:226:22 | call to scrub! | semmle.label | call to scrub! |
+| string_flow.rb:226:10:226:22 | call to scrub! | semmle.label | call to scrub! |
+| string_flow.rb:226:21:226:21 | a :  | semmle.label | a :  |
+| string_flow.rb:226:21:226:21 | a :  | semmle.label | a :  |
+| string_flow.rb:228:5:228:18 | ... = ... :  | semmle.label | ... = ... :  |
+| string_flow.rb:228:5:228:18 | ... = ... :  | semmle.label | ... = ... :  |
+| string_flow.rb:228:9:228:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:228:9:228:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:229:5:229:5 | a :  | semmle.label | a :  |
+| string_flow.rb:229:5:229:5 | a :  | semmle.label | a :  |
+| string_flow.rb:229:17:229:17 | x :  | semmle.label | x :  |
+| string_flow.rb:229:17:229:17 | x :  | semmle.label | x :  |
+| string_flow.rb:229:25:229:25 | x | semmle.label | x |
+| string_flow.rb:229:25:229:25 | x | semmle.label | x |
+| string_flow.rb:231:10:231:29 | call to scrub! | semmle.label | call to scrub! |
+| string_flow.rb:231:10:231:29 | call to scrub! | semmle.label | call to scrub! |
+| string_flow.rb:231:21:231:29 | <captured> :  | semmle.label | <captured> :  |
+| string_flow.rb:231:21:231:29 | <captured> :  | semmle.label | <captured> :  |
+| string_flow.rb:231:27:231:27 | a :  | semmle.label | a :  |
+| string_flow.rb:231:27:231:27 | a :  | semmle.label | a :  |
+| string_flow.rb:235:9:235:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:236:9:236:9 | a :  | semmle.label | a :  |
+| string_flow.rb:236:9:236:20 | call to shellsplit [array element] :  | semmle.label | call to shellsplit [array element] :  |
+| string_flow.rb:237:10:237:10 | b [array element] :  | semmle.label | b [array element] :  |
+| string_flow.rb:237:10:237:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:241:9:241:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:242:9:242:9 | a :  | semmle.label | a :  |
+| string_flow.rb:242:9:242:18 | call to slice :  | semmle.label | call to slice :  |
+| string_flow.rb:243:10:243:10 | b :  | semmle.label | b :  |
+| string_flow.rb:243:10:243:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:245:9:245:9 | [post] a :  | semmle.label | [post] a :  |
+| string_flow.rb:245:9:245:9 | [post] a [array element 1] :  | semmle.label | [post] a [array element 1] :  |
+| string_flow.rb:245:9:245:9 | [post] a [array element 2] :  | semmle.label | [post] a [array element 2] :  |
+| string_flow.rb:245:9:245:9 | [post] a [array element] :  | semmle.label | [post] a [array element] :  |
+| string_flow.rb:245:9:245:9 | a :  | semmle.label | a :  |
+| string_flow.rb:245:9:245:19 | call to slice! :  | semmle.label | call to slice! :  |
+| string_flow.rb:246:10:246:10 | b :  | semmle.label | b :  |
+| string_flow.rb:246:10:246:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:248:9:248:9 | a :  | semmle.label | a :  |
+| string_flow.rb:248:9:248:20 | call to split :  | semmle.label | call to split :  |
+| string_flow.rb:249:10:249:10 | b :  | semmle.label | b :  |
+| string_flow.rb:249:10:249:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:251:9:251:9 | a :  | semmle.label | a :  |
+| string_flow.rb:251:9:251:9 | a [array element 1] :  | semmle.label | a [array element 1] :  |
+| string_flow.rb:251:9:251:9 | a [array element 2] :  | semmle.label | a [array element 2] :  |
+| string_flow.rb:251:9:251:9 | a [array element] :  | semmle.label | a [array element] :  |
+| string_flow.rb:251:9:251:14 | ...[...] :  | semmle.label | ...[...] :  |
+| string_flow.rb:251:9:251:14 | ...[...] [array element 0] :  | semmle.label | ...[...] [array element 0] :  |
+| string_flow.rb:251:9:251:14 | ...[...] [array element 1] :  | semmle.label | ...[...] [array element 1] :  |
+| string_flow.rb:251:9:251:14 | ...[...] [array element] :  | semmle.label | ...[...] [array element] :  |
+| string_flow.rb:252:10:252:10 | b :  | semmle.label | b :  |
+| string_flow.rb:252:10:252:10 | b [array element 0] :  | semmle.label | b [array element 0] :  |
+| string_flow.rb:252:10:252:10 | b [array element 1] :  | semmle.label | b [array element 1] :  |
+| string_flow.rb:252:10:252:10 | b [array element] :  | semmle.label | b [array element] :  |
+| string_flow.rb:252:10:252:13 | ...[...] | semmle.label | ...[...] |
+| string_flow.rb:256:9:256:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:257:10:257:10 | a :  | semmle.label | a :  |
+| string_flow.rb:257:10:257:18 | call to squeeze | semmle.label | call to squeeze |
+| string_flow.rb:258:10:258:10 | a :  | semmle.label | a :  |
+| string_flow.rb:258:10:258:23 | call to squeeze | semmle.label | call to squeeze |
+| string_flow.rb:259:10:259:10 | a :  | semmle.label | a :  |
+| string_flow.rb:259:10:259:19 | call to squeeze! | semmle.label | call to squeeze! |
+| string_flow.rb:260:10:260:10 | a :  | semmle.label | a :  |
+| string_flow.rb:260:10:260:24 | call to squeeze! | semmle.label | call to squeeze! |
+| string_flow.rb:264:9:264:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:264:9:264:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:265:10:265:10 | a :  | semmle.label | a :  |
+| string_flow.rb:265:10:265:10 | a :  | semmle.label | a :  |
+| string_flow.rb:265:10:265:17 | call to to_str | semmle.label | call to to_str |
+| string_flow.rb:265:10:265:17 | call to to_str | semmle.label | call to to_str |
+| string_flow.rb:266:10:266:10 | a :  | semmle.label | a :  |
+| string_flow.rb:266:10:266:10 | a :  | semmle.label | a :  |
+| string_flow.rb:266:10:266:15 | call to to_s | semmle.label | call to to_s |
+| string_flow.rb:266:10:266:15 | call to to_s | semmle.label | call to to_s |
+| string_flow.rb:270:9:270:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:271:10:271:10 | a :  | semmle.label | a :  |
+| string_flow.rb:271:10:271:23 | call to tr | semmle.label | call to tr |
+| string_flow.rb:272:10:272:23 | call to tr | semmle.label | call to tr |
+| string_flow.rb:272:22:272:22 | a :  | semmle.label | a :  |
+| string_flow.rb:273:10:273:10 | a :  | semmle.label | a :  |
+| string_flow.rb:273:10:273:24 | call to tr! | semmle.label | call to tr! |
+| string_flow.rb:274:10:274:24 | call to tr! | semmle.label | call to tr! |
+| string_flow.rb:274:23:274:23 | a :  | semmle.label | a :  |
+| string_flow.rb:275:10:275:10 | a :  | semmle.label | a :  |
+| string_flow.rb:275:10:275:25 | call to tr_s | semmle.label | call to tr_s |
+| string_flow.rb:276:10:276:25 | call to tr_s | semmle.label | call to tr_s |
+| string_flow.rb:276:24:276:24 | a :  | semmle.label | a :  |
+| string_flow.rb:277:10:277:10 | a :  | semmle.label | a :  |
+| string_flow.rb:277:10:277:26 | call to tr_s! | semmle.label | call to tr_s! |
+| string_flow.rb:278:10:278:26 | call to tr_s! | semmle.label | call to tr_s! |
+| string_flow.rb:278:25:278:25 | a :  | semmle.label | a :  |
+| string_flow.rb:282:9:282:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:282:9:282:18 | call to source :  | semmle.label | call to source :  |
+| string_flow.rb:283:5:283:5 | a :  | semmle.label | a :  |
+| string_flow.rb:283:5:283:5 | a :  | semmle.label | a :  |
+| string_flow.rb:283:20:283:20 | x :  | semmle.label | x :  |
+| string_flow.rb:283:20:283:20 | x :  | semmle.label | x :  |
+| string_flow.rb:283:28:283:28 | x | semmle.label | x |
+| string_flow.rb:283:28:283:28 | x | semmle.label | x |
+| string_flow.rb:284:14:284:14 | a :  | semmle.label | a :  |
+| string_flow.rb:284:14:284:14 | a :  | semmle.label | a :  |
+| string_flow.rb:284:20:284:20 | x :  | semmle.label | x :  |
+| string_flow.rb:284:20:284:20 | x :  | semmle.label | x :  |
+| string_flow.rb:284:28:284:28 | x | semmle.label | x |
+| string_flow.rb:284:28:284:28 | x | semmle.label | x |
+| string_flow.rb:285:9:285:9 | a :  | semmle.label | a :  |
+| string_flow.rb:285:9:285:19 | call to upto :  | semmle.label | call to upto :  |
+| string_flow.rb:286:10:286:10 | c :  | semmle.label | c :  |
+| string_flow.rb:286:10:286:13 | ...[...] | semmle.label | ...[...] |
+subpaths
+#select
+| string_flow.rb:3:10:3:22 | call to new | string_flow.rb:2:9:2:18 | call to source :  | string_flow.rb:3:10:3:22 | call to new | $@ | string_flow.rb:2:9:2:18 | call to source :  | call to source :  |
+| string_flow.rb:8:10:8:30 | call to try_convert | string_flow.rb:7:9:7:18 | call to source :  | string_flow.rb:8:10:8:30 | call to try_convert | $@ | string_flow.rb:7:9:7:18 | call to source :  | call to source :  |
+| string_flow.rb:13:10:13:17 | ... % ... | string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:13:10:13:17 | ... % ... | $@ | string_flow.rb:12:9:12:18 | call to source :  | call to source :  |
+| string_flow.rb:14:10:14:29 | ... % ... | string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:14:10:14:29 | ... % ... | $@ | string_flow.rb:12:9:12:18 | call to source :  | call to source :  |
+| string_flow.rb:15:10:15:18 | ... % ... | string_flow.rb:12:9:12:18 | call to source :  | string_flow.rb:15:10:15:18 | ... % ... | $@ | string_flow.rb:12:9:12:18 | call to source :  | call to source :  |
+| string_flow.rb:20:10:20:12 | call to b | string_flow.rb:19:9:19:18 | call to source :  | string_flow.rb:20:10:20:12 | call to b | $@ | string_flow.rb:19:9:19:18 | call to source :  | call to source :  |
+| string_flow.rb:25:10:25:23 | call to byteslice | string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:25:10:25:23 | call to byteslice | $@ | string_flow.rb:24:9:24:18 | call to source :  | call to source :  |
+| string_flow.rb:26:10:26:26 | call to byteslice | string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:26:10:26:26 | call to byteslice | $@ | string_flow.rb:24:9:24:18 | call to source :  | call to source :  |
+| string_flow.rb:27:10:27:26 | call to byteslice | string_flow.rb:24:9:24:18 | call to source :  | string_flow.rb:27:10:27:26 | call to byteslice | $@ | string_flow.rb:24:9:24:18 | call to source :  | call to source :  |
+| string_flow.rb:63:10:63:10 | a | string_flow.rb:61:9:61:18 | call to source :  | string_flow.rb:63:10:63:10 | a | $@ | string_flow.rb:61:9:61:18 | call to source :  | call to source :  |
+| string_flow.rb:70:10:70:23 | call to concat | string_flow.rb:67:9:67:18 | call to source :  | string_flow.rb:70:10:70:23 | call to concat | $@ | string_flow.rb:67:9:67:18 | call to source :  | call to source :  |
+| string_flow.rb:70:10:70:23 | call to concat | string_flow.rb:68:9:68:18 | call to source :  | string_flow.rb:70:10:70:23 | call to concat | $@ | string_flow.rb:68:9:68:18 | call to source :  | call to source :  |
+| string_flow.rb:71:10:71:10 | c | string_flow.rb:67:9:67:18 | call to source :  | string_flow.rb:71:10:71:10 | c | $@ | string_flow.rb:67:9:67:18 | call to source :  | call to source :  |
+| string_flow.rb:71:10:71:10 | c | string_flow.rb:68:9:68:18 | call to source :  | string_flow.rb:71:10:71:10 | c | $@ | string_flow.rb:68:9:68:18 | call to source :  | call to source :  |
+| string_flow.rb:78:10:78:24 | call to prepend | string_flow.rb:75:9:75:18 | call to source :  | string_flow.rb:78:10:78:24 | call to prepend | $@ | string_flow.rb:75:9:75:18 | call to source :  | call to source :  |
+| string_flow.rb:78:10:78:24 | call to prepend | string_flow.rb:76:9:76:18 | call to source :  | string_flow.rb:78:10:78:24 | call to prepend | $@ | string_flow.rb:76:9:76:18 | call to source :  | call to source :  |
+| string_flow.rb:79:10:79:10 | c | string_flow.rb:75:9:75:18 | call to source :  | string_flow.rb:79:10:79:10 | c | $@ | string_flow.rb:75:9:75:18 | call to source :  | call to source :  |
+| string_flow.rb:79:10:79:10 | c | string_flow.rb:76:9:76:18 | call to source :  | string_flow.rb:79:10:79:10 | c | $@ | string_flow.rb:76:9:76:18 | call to source :  | call to source :  |
+| string_flow.rb:107:35:107:38 | line | string_flow.rb:106:9:106:18 | call to source :  | string_flow.rb:107:35:107:38 | line | $@ | string_flow.rb:106:9:106:18 | call to source :  | call to source :  |
+| string_flow.rb:108:10:108:10 | b | string_flow.rb:106:9:106:18 | call to source :  | string_flow.rb:108:10:108:10 | b | $@ | string_flow.rb:106:9:106:18 | call to source :  | call to source :  |
+| string_flow.rb:115:31:115:34 | line | string_flow.rb:114:9:114:18 | call to source :  | string_flow.rb:115:31:115:34 | line | $@ | string_flow.rb:114:9:114:18 | call to source :  | call to source :  |
+| string_flow.rb:116:10:116:10 | b | string_flow.rb:114:9:114:18 | call to source :  | string_flow.rb:116:10:116:10 | b | $@ | string_flow.rb:114:9:114:18 | call to source :  | call to source :  |
+| string_flow.rb:136:10:136:17 | call to freeze | string_flow.rb:135:9:135:18 | call to source :  | string_flow.rb:136:10:136:17 | call to freeze | $@ | string_flow.rb:135:9:135:18 | call to source :  | call to source :  |
+| string_flow.rb:144:10:144:43 | call to gsub | string_flow.rb:144:32:144:41 | call to source :  | string_flow.rb:144:10:144:43 | call to gsub | $@ | string_flow.rb:144:32:144:41 | call to source :  | call to source :  |
+| string_flow.rb:145:10:145:44 | call to gsub! | string_flow.rb:145:33:145:42 | call to source :  | string_flow.rb:145:10:145:44 | call to gsub! | $@ | string_flow.rb:145:33:145:42 | call to source :  | call to source :  |
+| string_flow.rb:153:10:153:42 | call to sub | string_flow.rb:153:31:153:40 | call to source :  | string_flow.rb:153:10:153:42 | call to sub | $@ | string_flow.rb:153:31:153:40 | call to source :  | call to source :  |
+| string_flow.rb:154:10:154:43 | call to sub! | string_flow.rb:154:32:154:41 | call to source :  | string_flow.rb:154:10:154:43 | call to sub! | $@ | string_flow.rb:154:32:154:41 | call to source :  | call to source :  |
+| string_flow.rb:160:10:160:25 | call to insert | string_flow.rb:158:9:158:18 | call to source :  | string_flow.rb:160:10:160:25 | call to insert | $@ | string_flow.rb:158:9:158:18 | call to source :  | call to source :  |
+| string_flow.rb:170:10:170:16 | call to strip | string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:170:10:170:16 | call to strip | $@ | string_flow.rb:169:9:169:18 | call to source :  | call to source :  |
+| string_flow.rb:171:10:171:17 | call to strip! | string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:171:10:171:17 | call to strip! | $@ | string_flow.rb:169:9:169:18 | call to source :  | call to source :  |
+| string_flow.rb:172:10:172:17 | call to lstrip | string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:172:10:172:17 | call to lstrip | $@ | string_flow.rb:169:9:169:18 | call to source :  | call to source :  |
+| string_flow.rb:173:10:173:18 | call to lstrip! | string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:173:10:173:18 | call to lstrip! | $@ | string_flow.rb:169:9:169:18 | call to source :  | call to source :  |
+| string_flow.rb:174:10:174:17 | call to rstrip | string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:174:10:174:17 | call to rstrip | $@ | string_flow.rb:169:9:169:18 | call to source :  | call to source :  |
+| string_flow.rb:175:10:175:18 | call to rstrip! | string_flow.rb:169:9:169:18 | call to source :  | string_flow.rb:175:10:175:18 | call to rstrip! | $@ | string_flow.rb:169:9:169:18 | call to source :  | call to source :  |
+| string_flow.rb:199:10:199:21 | call to replace | string_flow.rb:197:9:197:18 | call to source :  | string_flow.rb:199:10:199:21 | call to replace | $@ | string_flow.rb:197:9:197:18 | call to source :  | call to source :  |
+| string_flow.rb:200:10:200:10 | a | string_flow.rb:196:9:196:18 | call to source :  | string_flow.rb:200:10:200:10 | a | $@ | string_flow.rb:196:9:196:18 | call to source :  | call to source :  |
+| string_flow.rb:200:10:200:10 | a | string_flow.rb:197:9:197:18 | call to source :  | string_flow.rb:200:10:200:10 | a | $@ | string_flow.rb:197:9:197:18 | call to source :  | call to source :  |
+| string_flow.rb:212:10:212:10 | b | string_flow.rb:209:9:209:18 | call to source :  | string_flow.rb:212:10:212:10 | b | $@ | string_flow.rb:209:9:209:18 | call to source :  | call to source :  |
+| string_flow.rb:221:10:221:21 | call to scrub | string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:221:10:221:21 | call to scrub | $@ | string_flow.rb:219:9:219:18 | call to source :  | call to source :  |
+| string_flow.rb:222:24:222:24 | x | string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:222:24:222:24 | x | $@ | string_flow.rb:219:9:219:18 | call to source :  | call to source :  |
+| string_flow.rb:223:10:223:28 | call to scrub | string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:223:10:223:28 | call to scrub | $@ | string_flow.rb:219:9:219:18 | call to source :  | call to source :  |
+| string_flow.rb:223:10:223:28 | call to scrub | string_flow.rb:228:9:228:18 | call to source :  | string_flow.rb:223:10:223:28 | call to scrub | $@ | string_flow.rb:228:9:228:18 | call to source :  | call to source :  |
+| string_flow.rb:226:10:226:22 | call to scrub! | string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:226:10:226:22 | call to scrub! | $@ | string_flow.rb:219:9:219:18 | call to source :  | call to source :  |
+| string_flow.rb:229:25:229:25 | x | string_flow.rb:228:9:228:18 | call to source :  | string_flow.rb:229:25:229:25 | x | $@ | string_flow.rb:228:9:228:18 | call to source :  | call to source :  |
+| string_flow.rb:231:10:231:29 | call to scrub! | string_flow.rb:219:9:219:18 | call to source :  | string_flow.rb:231:10:231:29 | call to scrub! | $@ | string_flow.rb:219:9:219:18 | call to source :  | call to source :  |
+| string_flow.rb:231:10:231:29 | call to scrub! | string_flow.rb:228:9:228:18 | call to source :  | string_flow.rb:231:10:231:29 | call to scrub! | $@ | string_flow.rb:228:9:228:18 | call to source :  | call to source :  |
+| string_flow.rb:265:10:265:17 | call to to_str | string_flow.rb:264:9:264:18 | call to source :  | string_flow.rb:265:10:265:17 | call to to_str | $@ | string_flow.rb:264:9:264:18 | call to source :  | call to source :  |
+| string_flow.rb:266:10:266:15 | call to to_s | string_flow.rb:264:9:264:18 | call to source :  | string_flow.rb:266:10:266:15 | call to to_s | $@ | string_flow.rb:264:9:264:18 | call to source :  | call to source :  |
+| string_flow.rb:283:28:283:28 | x | string_flow.rb:282:9:282:18 | call to source :  | string_flow.rb:283:28:283:28 | x | $@ | string_flow.rb:282:9:282:18 | call to source :  | call to source :  |
+| string_flow.rb:284:28:284:28 | x | string_flow.rb:282:9:282:18 | call to source :  | string_flow.rb:284:28:284:28 | x | $@ | string_flow.rb:282:9:282:18 | call to source :  | call to source :  |

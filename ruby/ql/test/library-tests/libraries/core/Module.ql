@@ -1,5 +1,5 @@
 import codeql.ruby.DataFlow
-import codeql.ruby.frameworks.core.Module::Module
+import codeql.ruby.libraries.core.Module::Module
 
 query DataFlow::Node classEvalCallCodeExecutions(ClassEvalCallCodeExecution e) {
   result = e.getCode()

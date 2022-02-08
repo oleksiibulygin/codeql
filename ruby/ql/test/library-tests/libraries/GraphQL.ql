@@ -1,4 +1,4 @@
-private import codeql.ruby.frameworks.GraphQL
+private import codeql.ruby.libraries.GraphQL
 private import codeql.ruby.AST
 
 query predicate graphqlSchemaObjectClass(GraphqlSchemaObjectClass cls) { any() }

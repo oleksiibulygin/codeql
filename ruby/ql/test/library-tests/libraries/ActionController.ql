@@ -1,6 +1,6 @@
 private import ruby
-private import codeql.ruby.frameworks.ActionController
-private import codeql.ruby.frameworks.ActionView
+private import codeql.ruby.libraries.ActionController
+private import codeql.ruby.libraries.ActionView
 
 query predicate actionControllerControllerClasses(ActionControllerControllerClass cls) { any() }
 

@@ -8,7 +8,7 @@ private import internal.DataFlowPrivate
 
 // import all instances below
 private module Summaries {
-  private import codeql.ruby.Frameworks
+  private import codeql.ruby.Libraries
 }
 
 class SummaryComponent = Impl::Public::SummaryComponent;

@@ -1,4 +1,4 @@
-import codeql.ruby.frameworks.core.Kernel::Kernel
+import codeql.ruby.libraries.core.Kernel::Kernel
 import codeql.ruby.DataFlow
 
 query predicate kernelSystemCallExecutions(KernelSystemCall c) { any() }

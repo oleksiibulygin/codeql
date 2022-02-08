@@ -1,5 +1,5 @@
 import codeql.ruby.controlflow.CfgNodes
-import codeql.ruby.frameworks.ActiveRecord
+import codeql.ruby.libraries.ActiveRecord
 
 query predicate activeRecordModelClasses(ActiveRecordModelClass cls) { any() }
 

@@ -5,8 +5,8 @@ private import codeql.ruby.DataFlow
 private import codeql.ruby.dataflow.internal.DataFlowDispatch
 private import codeql.ruby.ast.internal.Module
 private import codeql.ruby.ApiGraphs
-private import codeql.ruby.frameworks.Stdlib
-private import codeql.ruby.frameworks.Core
+private import codeql.ruby.libraries.Stdlib
+private import codeql.ruby.libraries.Core
 
 private class ActiveRecordBaseAccess extends ConstantReadAccess {
   ActiveRecordBaseAccess() {

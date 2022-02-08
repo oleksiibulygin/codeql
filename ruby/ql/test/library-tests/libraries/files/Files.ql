@@ -1,5 +1,5 @@
 private import ruby
-private import codeql.ruby.frameworks.Files
+private import codeql.ruby.libraries.Files
 private import codeql.ruby.Concepts
 
 query predicate fileInstances(File::FileInstance i) { any() }

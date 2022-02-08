@@ -7,7 +7,7 @@
 private import codeql.ruby.AST
 private import codeql.ruby.CFG
 private import codeql.ruby.DataFlow
-private import codeql.ruby.Frameworks
+private import codeql.ruby.Libraries
 private import codeql.ruby.dataflow.RemoteFlowSources
 private import codeql.ruby.ApiGraphs
 

@@ -13,7 +13,7 @@
 
 import ruby
 import codeql.ruby.Concepts
-import codeql.ruby.Frameworks
+import codeql.ruby.Libraries
 
 from CookieSecurityConfigurationSetting s
 select s, s.getSecurityWarningMessage()

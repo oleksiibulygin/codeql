@@ -1,4 +1,4 @@
-import codeql.ruby.frameworks.Stdlib
+import codeql.ruby.libraries.Stdlib
 import codeql.ruby.DataFlow
 
 query predicate subshellLiteralExecutions(SubshellLiteralExecution e) { any() }

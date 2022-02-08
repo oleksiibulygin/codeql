@@ -6,10 +6,10 @@ private import codeql.files.FileSystem
 private import codeql.ruby.AST
 private import codeql.ruby.Concepts
 private import codeql.ruby.DataFlow
-private import codeql.ruby.frameworks.ActionController
-private import codeql.ruby.frameworks.ActionView
-private import codeql.ruby.frameworks.ActiveRecord
-private import codeql.ruby.frameworks.ActiveStorage
+private import codeql.ruby.libraries.ActionController
+private import codeql.ruby.libraries.ActionView
+private import codeql.ruby.libraries.ActiveRecord
+private import codeql.ruby.libraries.ActiveStorage
 private import codeql.ruby.ast.internal.Module
 private import codeql.ruby.ApiGraphs
 private import codeql.ruby.security.OpenSSL

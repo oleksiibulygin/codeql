@@ -1,7 +1,7 @@
 private import ruby
 private import codeql.ruby.DataFlow
 private import codeql.ruby.Concepts
-private import codeql.ruby.Frameworks
+private import codeql.ruby.Libraries
 private import codeql.ruby.dataflow.RemoteFlowSources
 private import codeql.ruby.dataflow.BarrierGuards
 

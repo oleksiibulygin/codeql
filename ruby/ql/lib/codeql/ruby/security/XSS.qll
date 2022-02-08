@@ -7,9 +7,9 @@ private import codeql.ruby.DataFlow
 private import codeql.ruby.DataFlow2
 private import codeql.ruby.CFG
 private import codeql.ruby.Concepts
-private import codeql.ruby.Frameworks
-private import codeql.ruby.frameworks.ActionController
-private import codeql.ruby.frameworks.ActionView
+private import codeql.ruby.Libraries
+private import codeql.ruby.libraries.ActionController
+private import codeql.ruby.libraries.ActionView
 private import codeql.ruby.dataflow.RemoteFlowSources
 private import codeql.ruby.dataflow.BarrierGuards
 private import codeql.ruby.dataflow.internal.DataFlowDispatch

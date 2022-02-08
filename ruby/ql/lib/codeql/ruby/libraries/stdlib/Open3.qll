@@ -1,7 +1,7 @@
 private import codeql.ruby.AST
 private import codeql.ruby.DataFlow
 private import codeql.ruby.ApiGraphs
-private import codeql.ruby.frameworks.Stdlib
+private import codeql.ruby.libraries.Stdlib
 private import codeql.ruby.Concepts
 
 module Open3 {
